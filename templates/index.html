@@ -5,15 +5,17 @@
 	<meta name="description" content="Proyecto de la primera generación  del 2014 del curso de diseño web online">
 	<meta name="viewport" content="width=device-width minimum-scale=1, maximum-scale=1"/>
 	<title>Puls2014: Comunidad de personas atractivas y sexy</title>
-	<script src="../static/js/prefixfree.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="../static/css/normalize.css">
 	<link rel="stylesheet" href="../static/css/stylesheet.css">
+	<script src="../static/js/prefixfree.min.js"></script>
 </head>
 <body>
 	<header>
 		<figure id="logo">
-			<img src="../static/img/logo.png"/>
+			<a href="index.html">
+				<img src="../static/img/logo.png"/>
+			</a>		
 		</figure>
 		<h1>Puls2014: Comunidad de personas atractivas y millonarias</h1>
 		<figure id="avatar">
@@ -28,18 +30,27 @@
 			<li><a href="#">CSS3</a></li>
 			<li><a href="#">Django</a></li>
 			<li id="publicar_nav">
-				<a href="#" class="icon-pluma">Publicar</a>
+				<a href="#" class="icon-pluma" id="mostrar-form">Publicar</a>
 				</li>
 		</ul>
 	</nav>
-
-<aside>	
-	<video width="320" height="240" autoplay>
-		<source src="../static/video/lecturas.m4v" type="video/mp4"></source>
-		<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
-		<!-- Actualiza tu navegador -->
-	</video>
-</aside>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Titulo" required/>
+		<input type="url" id="url" placeholder="Link" required/>
+		<input type="submit" value="Agregar" />
+	</form>
+	<aside>	
+			<video width="320" height="240" controls autoplay loop="loop" preload="preload">
+				<source src="../static/video/lecturas.m4v" type="video/mp4"></source>
+				<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
+				<!-- Actualiza tu navegador -->
+			</video>
+			<video width="320" height="240" controls autoplay loop="loop" preload="preload">
+				<source src="../static/video/notas.m4v" type="video/mp4"></source>
+				<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
+				<!-- Actualiza tu navegador -->
+			</video>
+	</aside>
 
 	<section id="contenido">
 		<article class="item">
@@ -194,6 +205,13 @@
 		<p>
 			mejorando.la
 		</p>
-	</footer>	
+	</footer>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script src="../static/js/formulario.js"></script>
+	<script>
+		$(function(){
+			console.log("ya se disparo el evento DOMcontentLoader");
+		});
+	</script>
 </body>
 </html>

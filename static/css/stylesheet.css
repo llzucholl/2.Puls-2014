@@ -131,10 +131,10 @@ header #logo img {
 	width: 52px;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
-	-webkit-transition: 0.5s;
 }
 
 header #logo img:hover {
+	-webkit-transition: 0.5s;
 	-webkit-transform: rotate(360deg);
 } 
 

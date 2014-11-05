@@ -36,16 +36,16 @@
 	</nav>
 	<form action="" id="formulario" class="formulario">
 		<input type="text" id="titulo" placeholder="Titulo" required/>
-		<input type="url" id="url" placeholder="Link" required/>
+		<input type="url" id="link" placeholder="Link" required/>
 		<input type="submit" value="Agregar" />
 	</form>
 	<aside>	
-			<video width="320" height="240" controls autoplay loop="loop" preload="preload">
+			<video width="320" height="240" autoplay loop="loop" preload="preload">
 				<source src="../static/video/lecturas.m4v" type="video/mp4"></source>
 				<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
 				<!-- Actualiza tu navegador -->
 			</video>
-			<video width="320" height="240" controls autoplay loop="loop" preload="preload">
+			<video width="320" height="240" autoplay loop="loop" preload="preload">
 				<source src="../static/video/notas.m4v" type="video/mp4"></source>
 				<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
 				<!-- Actualiza tu navegador -->
@@ -58,7 +58,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
+				<a href="#" target="_blank">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -82,7 +82,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Monitorea tu aplicación en tiempo real con New Relic</a>
+				<a href="#" target="_blank">Monitorea tu aplicación en tiempo real con New Relic</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -106,7 +106,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
+				<a href="#" target="_blank">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -130,7 +130,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Las mejores técnicas de email marketing: ¿Cómo evitar llegar a spam?</a>
+				<a href="#" target="_blank">Las mejores técnicas de email marketing: ¿Cómo evitar llegar a spam?</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -154,7 +154,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
+				<a href="#" target="_blank">Digits de Twitter: Tu teléfono es más seguro que tu email</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -178,7 +178,7 @@
 				<img src="../static/img/foto.jpg"/>
 			</figure>
 			<h2 class="titulo_item">
-				<a href="#">Monitorea tu aplicación en tiempo real con New Relic</a>
+				<a href="#" target="_blank">Monitorea tu aplicación en tiempo real con New Relic</a>
 			</h2>
 			<div class="autor_item">
 				por <a href="#">Joana Muñoz</a>
@@ -206,12 +206,16 @@
 			mejorando.la
 		</p>
 	</footer>
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>	
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="../static/js/formulario.js"></script>
 	<script>
-		$(function(){
-			console.log("ya se disparo el evento DOMcontentLoader");
-		});
+	// window.onload = function() {
+	// 	console.log("Ya se disparó el evento OnLoad");
+	// }
+
+	// $(function(){
+	// 	console.log("Ya se disparó el evento DOMContentLoader");
+	// });
 	</script>
 </body>
 </html>

@@ -302,6 +302,10 @@ aside {
 	color: white;
 }
 
+#publicidad {
+	text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
 	aside {
 		display: block;

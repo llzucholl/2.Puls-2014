@@ -226,6 +226,12 @@
 	// $(function(){
 	// 	console.log("Ya se disparó el evento DOMContentLoader");
 	// });
+
+	$(function(){
+		$('#publicar_nav a').on('click', function(){
+			$(this).toggleClass('disabled');
+		});
+	});
 	</script>
 </body>
 </html>

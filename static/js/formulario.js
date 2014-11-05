@@ -18,8 +18,9 @@ var id = setInterval( function(){
 
 function mostrarOcultarFormulario(e) {
 	//Por alguna razón, el preventDefault no funcionó :c
-	// e.preventDefault();
+	e.preventDefault();
 	// console.log(e);
+	e.stopPropagation();
 
 	$form.slideToggle();
 	$lista.slideToggle();
@@ -47,6 +48,14 @@ function agregarPost(evento) {
 	mostrarOcultarFormulario();
 	clone.slideDown()
 }
+
+$('nav').on('click', function(){
+	console.log('Soy un nav y me hicieron click');
+});
+
+$('ul').on('click', function(){
+	console.log('Soy un ul y me hicieron click');
+});
 
 $('#publicar_nav a').click( mostrarOcultarFormulario );
 $('#formulario')

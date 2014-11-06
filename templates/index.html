@@ -38,17 +38,11 @@
 		<input type="text" id="titulo" placeholder="Titulo" required/>
 		<input type="url" id="link" placeholder="Link" required/>
 		<input type="submit" value="Agregar" />
-	</form>
+	</form>	
 	<aside id="publicidad">	
-		<figure>			
-			<a href="http://mejorando.la">			
-				<video width="320" height="240" autoplay loop="loop" preload="preload">
-					<source src="../static/video/lecturas.m4v" type="video/mp4"></source>
-					<source src="../static/video/lecturas.ogg" type="video/ogg"></source>
-					<!-- Actualiza tu navegador -->
-				</video>
-			</a>
-			<figcaption>Publicidad Paga</figcaption>
+		<figure>
+			<div id="geo"></div>
+			<figcaption>Tu Posición</figcaption>
 		</figure>
 		<figure>			
 			<a href="http://mejorando.la">			
@@ -218,6 +212,8 @@
 	</footer>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="../static/js/formulario.js"></script>
+	<script src="../static/js/geo.js"></script>
+	<script src="../static/js/ajax.js"></script>
 	<script>
 	// window.onload = function() {
 	// 	console.log("Ya se disparó el evento OnLoad");

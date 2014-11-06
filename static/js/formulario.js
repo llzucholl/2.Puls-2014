@@ -18,9 +18,9 @@ var id = setInterval( function(){
 
 function mostrarOcultarFormulario(e) {
 	//Por alguna razón, el preventDefault no funcionó :c
-	e.preventDefault();
+	// e.preventDefault();
 	// console.log(e);
-	e.stopPropagation();
+	// e.stopPropagation();
 
 	$form.slideToggle();
 	$lista.slideToggle();
@@ -49,21 +49,20 @@ function agregarPost(evento) {
 	clone.slideDown()
 }
 
-$('nav').on('click', function(){
-	console.log('Soy un nav y me hicieron click');
-});
+// $('nav').on('click', function(){
+// 	console.log('Soy un nav y me hicieron click');
+// });
 
-$('ul').on('click', function(){
-	console.log('Soy un ul y me hicieron click');
-});
+// $('ul').on('click', function(){
+// 	console.log('Soy un ul y me hicieron click');
+// });
 
 $('#publicar_nav a').click( mostrarOcultarFormulario );
-$('#formulario')
-	.on('submit', agregarPost)
-	.find('#link')
-	.on('focus', function(){
-		$('#link').val('http://');
-	})
-	.on('blur', function(){
-		$('#link').val('');
-	});
+$('#formulario').on('submit', agregarPost);
+// 	.find('#link')
+// 	.on('focus', function(){
+// 		$('#link').val('http://');
+// 	})
+// 	.on('blur', function(){
+// 		$('#link').val('');
+// 	});

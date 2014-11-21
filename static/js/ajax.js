@@ -1,5 +1,5 @@
 $(function(){
-	$('footer .logos').load('logos_footer.html #maestros')
+	$('footer .logos').load('logos_footer.html')
 
 	$.get('../static/js/usuario.json', function(info){
 		var avatar = new Image();
